@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .container {
+            margin-bottom: 30px;
+        }
+        .col-6 {
+            width: 100%;
+            margin: 0 auto;
+            background-color: #82ccdd;
+            padding: 40px 20px;
+        }
+        #thongBaoDT,
+        #thongBaoCV,
+        #thongBaoTinhNum,
+        #thongBaoTinhChao,
+        #thongBaoTinhChanLe,
+        #thongBaoTinhTamGiac{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-6">
+            <h3 class="text-center my-3">Xuất 3 số theo thứ tự tăng dần</h3>
+            <form>
+                <div class="form-group">
+                    <label for="num1">Nhập số thứ 1</label>
+                    <input type="text" class="form-control" id="num1"/>
+                </div>
+                <div class="form-group">
+                    <label for="num2">Nhập số thứ 2</label>
+                    <input type="text" class="form-control" id="num2"/>
+                </div>
+                <div class="form-group">
+                    <label for="num3">Nhập số thứ 3</label>
+                    <input type="text" class="form-control" id="num3"/>
+                </div>
+                <button id="btnTinhNum" type="button" class="btn btn-primary">Submit</button>
+                <p id="thongBaoTinhNum" class="alert alert-primary my-3"></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-6">
+            <h3 class="text-center my-3">Chương trình chào hỏi</h3>
+            <form>
+                <div class="form-group">
+                    <label for="chaoHoi">Bạn là? Bố(B), Mẹ(M), Anh(A), Em (E)</label>
+                    <input type="text" class="form-control" id="chaoHoi"/>
+                </div>
+
+                <button id="btnTinhChao" type="button" class="btn btn-primary">Submit</button>
+                <p id="thongBaoTinhChao" class="alert alert-primary my-3"></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-6">
+            <h3 class="text-center my-3">Chương trình xuất số chẳn lẻ</h3>
+            <form>
+                <div class="form-group">
+                    <label for="chanLe1">Nhập số thứ 1</label>
+                    <input type="number" class="form-control" id="chanLe1"/>
+                </div>
+                <div class="form-group">
+                    <label for="chanLe2">Nhập số thứ 2</label>
+                    <input type="number" class="form-control" id="chanLe2"/>
+                </div>
+                <div class="form-group">
+                    <label for="chanLe3">Nhập số thứ 3</label>
+                    <input type="number" class="form-control" id="chanLe3"/>
+                </div>
+                <button id="btnTinhChanLe" type="button" class="btn btn-primary">Submit</button>
+                <p id="thongBaoTinhChanLe" class="alert alert-primary my-3"></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-6">
+            <h3 class="text-center my-3">Chương trình kiểm tra tam giác</h3>
+            <form>
+                <div class="form-group">
+                    <label for="TamGiac1">Nhập cạnh 1</label>
+                    <input type="number" class="form-control" id="TamGiac1"/>
+                </div>
+                <div class="form-group">
+                    <label for="TamGiac2">Nhập cạnh 2</label>
+                    <input type="number" class="form-control" id="TamGiac2"/>
+                </div>
+                <div class="form-group">
+                    <label for="TamGiac3">Nhập cạnh 3</label>
+                    <input type="number" class="form-control" id="TamGiac3"/>
+                </div>
+                <button id="btnTinhTamGiac" type="button" class="btn btn-primary">Submit</button>
+                <p id="thongBaoTinhTamGiac" class="alert alert-primary my-3"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+        <script src="./js/thuTuTangDan.js"></script>
+        <script src="./js/chaoHoi.js"></script>
+        <script src="./js/chanLe.js"></script>
+        <script src="./js/tinhTamGiac.js"></script>
+    
+</body>
+
+</html>
